@@ -1,6 +1,7 @@
 body{
   background-color: rgb(240, 240, 240);
 }
+
 .app {
   display: flex;
   width: 1000px;
@@ -57,11 +58,32 @@ textarea {
   box-shadow: 2px 2px 13px;
 }
 
-#prev-header {
+#prev-bar {
   background-color: rgb(61, 61, 61);
   border-top-right-radius: 5px;
   border-top-left-radius: 5px;
   padding: 5px;
+  display: flex;
+  justify-content: space-between;
+}
+
+#maxi-icon {
+  color: azure;
+}
+
+#maxi-icon:hover {
+  color: sandybrown;
+}
+
+button {
+  background-color: transparent;
+  border: transparent;
+  cursor: pointer;
+  outline: transparent;
+}
+
+
+#prev-header {
   color: azure;
   font-family: 'Lobster', cursive;
 }

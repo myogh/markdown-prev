@@ -1,38 +1,113 @@
-.App {
-  text-align: center;
+body{
+  background-color: rgb(240, 240, 240);
+}
+.app {
+  display: flex;
+  width: 1000px;
+  justify-content: center;
+  background-color: rgb(240, 240, 240);
+  margin: auto;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* ------------------------------------- */
+
+#mark-prev {
+  display: flex;
+  width: 96%;
+  margin: auto;
+  justify-content: space-between;
+  padding: 20px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
+/* ------------------------------------ */
+/* EDITOR */
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+#editor {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+#editor-header {
+  background-color: rgb(61, 61, 61);
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+  padding: 5px;
+  color: azure;
+  z-index: 1;
+  font-family: 'Lobster', cursive;
+  /* box-shadow: 0px 10px 7px gray; */
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+textarea {
+  outline: transparent;
+  border-bottom-right-radius: 3px;
+  border-bottom-left-radius: 3px;
+  resize: vertical;
+  padding-top: 9px;
+  padding-left: 5px;
+}
+
+/* --------------------------------------- */
+/* PREVIEWER */
+
+#previewer {
+  background-color: rgb(241, 238, 226);
+  width: 55%;
+  border-radius: 7px;
+  box-shadow: 2px 2px 13px;
+}
+
+#prev-header {
+  background-color: rgb(61, 61, 61);
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+  padding: 5px;
+  color: azure;
+  font-family: 'Lobster', cursive;
+}
+
+
+#prev-content {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.9em;
+  padding-left: 13px;
+  padding-right: 13px;
+  padding-bottom: 15px;
+
+}
+
+h1 {
+  border-bottom: 1px solid gray;
+}
+
+h2 {
+  border-bottom: 1px solid gray;
+}
+
+pre {
+  background-color: rgb(255, 255, 255);
+  font-size: 0.9em;
+  border-radius: 2px;
+  padding: 8px;
+  font-weight: bold;
+  border-radius: 4px;
+}
+
+code {
+  background-color: white;
+  font-weight: bold;
+  font-size: 0.9em;
+  padding: 3px;
+}
+
+blockquote {
+  border-left: 2px solid rgb(143, 142, 142);
+  padding-left: 7px;
+  color: gray;
+}
+
+th, td { 
+  border: 1px solid black;
+  padding: 6px;
+  margin: 0;
 }
